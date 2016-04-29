@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Testmonial_Frontend>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Testmonial_Frontend>
+    </modules>
+</config>

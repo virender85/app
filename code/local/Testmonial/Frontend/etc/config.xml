@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Testmonial_Frontend>
+            <version>0.0.2</version>
+        </Testmonial_Frontend>
+    </modules>
+    <global>
+       
+    </global>
+    <frontend>
+        <routers>
+            <testmonial_frontend>
+                <use>standard</use>
+                <args>
+                    <module>Testmonial_Frontend</module>
+                    <frontName>testmonial-slider</frontName>
+                </args>
+            </testmonial_frontend>
+        </routers>
+    </frontend>
+</config>

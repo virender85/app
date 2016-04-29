@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Testimonials_Clients>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Testimonials_Clients>
+    </modules>
+</config>

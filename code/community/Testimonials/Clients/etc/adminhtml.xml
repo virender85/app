@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <!-- we are defining a new admin panel menu item -->
+    <menu>
+        
+        <!--
+        first create a top level menu item which will appear alongside CMS
+        -->
+        <testimonials_clients translate="title"
+                module="testimonials_clients">
+            <title>Testimonials</title>
+            <sort_order>76</sort_order>
+            <depends>
+                <module>Testimonials_Clients</module>
+            </depends>
+            
+            <!-- under this top level menu create a child menu item -->
+            <children>
+                <client translate="title" 
+                        module="testimonials_clients">
+                    <title>Manage Testimonials</title>
+                    <sort_order>10</sort_order>
+                    
+                    <!-- 
+                    when the menu is clicked, take the user here 
+                    -->
+                 <action>testimonials_clients_admin/client</action>
+                    
+                </client>
+            </children>
+        </testimonials_clients>
+    </menu>
+    
+    <!-- define ACL for access to these menu items -->
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <testimonials_clients translate="title"
+                            module="testimonials_clients">
+                        <title>Testimonials List</title>
+                        <sort_order>75</sort_order>
+                        <children>
+                            <client translate="title" 
+                                    module="testimonials_clients">
+                                <title>Manage Testimonials</title>
+                            </client>
+                        </children>
+                    </testimonials_clients>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
